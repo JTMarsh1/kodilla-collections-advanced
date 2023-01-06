@@ -7,8 +7,8 @@ import java.util.List;
 
 public class ForumStats {
     public static void main(String[] args) {
-        System.out.println("Average of post Over 40's is: " + averageOfPostsOver40(UsersRepository.getUserList()));
-        System.out.println("Average of post Under 40's is: " +averageOfPostsUnder40(UsersRepository.getUserList()));
+        System.out.println("Average of post over 40 is: " + averageOfPostsOver40(UsersRepository.getUserList()));
+        System.out.println("Average of post under 40 is: " +averageOfPostsUnder40(UsersRepository.getUserList()));
 
     }
     public static double averageOfPostsOver40 (List<User> users){

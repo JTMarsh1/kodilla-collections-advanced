@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
+import java.util.List;
+
 
 public class AllegroTestingApp {
     public static void main(String[] args) {
@@ -23,5 +25,11 @@ public class AllegroTestingApp {
         WebElement product = driver.findElement(By.cssSelector("input.msts_pt"));
         product.sendKeys("Mavic mini");
         product.submit();
+
+        List<WebElement> element = driver.findElements(By.cssSelector("section>article"));
+        for (WebElement article : element) {
+            System.out.println(article.getText());
+
+        }
     }
 }

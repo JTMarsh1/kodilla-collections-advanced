@@ -11,7 +11,7 @@ import java.util.List;
 
 public class AllegroTestingApp {
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver", "C:\\selenium-drivers\\Chrome\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://allegro.pl/");
 
@@ -29,7 +29,6 @@ public class AllegroTestingApp {
         List<WebElement> element = driver.findElements(By.cssSelector("section>article"));
         for (WebElement article : element) {
             System.out.println(article.getText());
-
         }
     }
 }
